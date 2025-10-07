@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chat box</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./chatbox.css">
+
+</head>
+<body>
+
+<div class="app">
+ <div class="header">
+  <div class="logo">
+   <a href="main.html"><img src="./images/pngegg.png" alt="logo"></a>
+  </div>
+
+  <div class="search-bar">
+   <input type="text" placeholder="Search..." />
+  </div>
+  <div class="user-settings">
+   <div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+   </div>
+   <div class="settings">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+     <circle cx="12" cy="12" r="3" />
+     <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" /></svg>
+   </div>
+   <img class="user-profile" src="./Ayushp.jpeg" alt="" class="account-profile" alt="">
+  </div>
+ </div>
+ <div class="wrapper">
+  <div class="conversation-area">
+   <div class="msg online" style="background-color: rgb(205, 202, 202);">
+    <img class="msg-profile" src="./Charu 1.jpeg" alt="" />
+    <div class="msg-detail">
+     <div class="msg-username" style="color: white;">Charu Dhawan</div>
+     <div class="msg-content">
+      <span class="msg-message" style="color: white;">That's nice. I'm here for similar reasons....</span>
+      <span class="msg-date" style="color: white;">20m</span>
+     </div>
+    </div>
+   </div>
+   <div class="msg">
+    <img class="msg-profile" src="./Gauri 1.jpeg" alt="" />
+    <div class="msg-detail">
+     <div class="msg-username">Gauri Shankar</div>
+     <div class="msg-content">
+      <span class="msg-message">hii...</span>
+      <span class="msg-date">20m</span>
+     </div>
+    </div>
+   </div>
+   <div class="msg online">
+    <img class="msg-profile" src="./girl 3.jpeg" alt="" />
+    <div class="msg-detail">
+     <div class="msg-username">Ankita</div>
+     <div class="msg-content">
+      <span class="msg-message">Whats up..</span>
+      <span class="msg-date">45m</span>
+     </div>
+    </div>
+   </div>
+   <div class="msg online">
+    <img class="msg-profile" src="./girl 4.jpeg" alt="" />
+    <div class="msg-detail">
+     <div class="msg-username">Anamika</div>
+     <div class="msg-content">
+      <span class="msg-message">What are you doing..</span>
+      <span class="msg-date">2h</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="chat-area">
+    <div class="chat-area-header">
+     <div class="chat-area-title">Charu Dhawan</div>
+     <div class="chat-area-group">
+      <img class="chat-area-profile" src="./Charu 1.jpeg" alt="" />
+     </div>
+    </div>
+    <div class="chat-area-main">
+     <div class="chat-msg">
+      <div class="chat-msg-profile">
+       <img class="chat-msg-img" src="./Charu 1.jpeg" alt="" />
+       <div class="chat-msg-date">Message sent 1.22pm</div>
+      </div>
+      <div class="chat-msg-content">
+       <div class="chat-msg-text">Hi Aayush! Nice to connect with you here on Tanggled.</div>
+       <div class="chat-msg-text"> How are you today?.</div>
+      </div>
+     </div>
+     <div class="chat-msg owner">
+      <div class="chat-msg-profile">
+       <img class="chat-msg-img" src="./Ayushp.jpeg" alt="" />
+       <div class="chat-msg-date">Message seen 1.22pm</div>
+      </div>
+      <div class="chat-msg-content">
+       <div class="chat-msg-text">Hi Charu! I'm doing well, thank you.</div>
+       <div class="chat-msg-text">How about you? It's great to meet you here.</div>
+      </div>
+     </div>
+     <div class="chat-msg">
+      <div class="chat-msg-profile">
+       <img class="chat-msg-img" src="./Charu 1.jpeg" alt="">
+       <div class="chat-msg-date">Message sent 2.45pm</div>
+      </div>
+      <div class="chat-msg-content">
+       <div class="chat-msg-text">I'm good, thanks! So, what brings you to Tanggled?</div>
+      </div>
+     </div>
+     <div class="chat-msg owner">
+      <div class="chat-msg-profile">
+       <img class="chat-msg-img" src="./Ayushp.jpeg" alt="" />
+       <div class="chat-msg-date">Message seen 2.50pm</div>
+      </div>
+      <div class="chat-msg-content">
+       <div class="chat-msg-text">Well, I'm looking to meet someone special and see where it goes.</div>
+       <div class="chat-msg-text">A friend recommended this site. How about you?</div>
+      </div>
+     </div>
+     <div class="chat-msg">
+      <div class="chat-msg-profile">
+       <img class="chat-msg-img" src="./Charu 1.jpeg" alt="" />
+       <div class="chat-msg-date">Message sent 3.16pm</div>
+      </div>
+      <div class="chat-msg-content">
+       <div class="chat-msg-text">That's nice. I'm here for similar reasons. My cousin found her match on Tanggled,so I thought I'd give it a try.</div>
+      </div>
+     </div>
+    </div>
+    <div class="chat-area-footer">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video">
+      <path d="M23 7l-7 5 7 5V7z" />
+      <rect x="1" y="5" width="15" height="14" rx="2" ry="2" /></svg>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image">
+      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+      <circle cx="8.5" cy="8.5" r="1.5" />
+      <path d="M21 15l-5-5L5 21" /></svg>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 8v8M8 12h8" /></svg>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip">
+      <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" /></svg>
+     <input type="text" placeholder="Type something here..." />
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" /></svg>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+      <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" /></svg>
+    </div>
+   </div>
+ </div>
+</div>
+
+  <script>
+    const toggleButton = document.querySelector('.dark-light');
+const colors = document.querySelectorAll('.color');
+
+colors.forEach(color => {
+  color.addEventListener('click', e => {
+    colors.forEach(c => c.classList.remove('selected'));
+    const theme = color.getAttribute('data-color');
+    document.body.setAttribute('data-theme', theme);
+    color.classList.add('selected');
+  });
+});
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+  </script>
+
+</body>
+</html>

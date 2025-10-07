@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TANGLED</title>
     <!-- <style src="mainn.css"></style> -->
     <link rel="stylesheet" href="mainn.css">
 
@@ -27,6 +27,8 @@
                     <a href="#support" class="btn">Support</a>
                     <a href="contact.html" class="btn">Contact Us</a>
                     <a href="#about" class="btn">About Us</a>
+                    <a href="api.html" class="btn">API Profiles</a>
+                    <a href="chatbox.html" class="btn">Chat Box</a>
                         
                 </div>
     
@@ -38,15 +40,38 @@
                     </div>
     
                     <div class="dropdown-content">
-                        <a href="#signin">Sign out</a>
-                        <a href="#login">Log out</a>
-                        <a href="profile.html">Profile</a>
+                        <a href="sign.html">Sign out</a>
+                        <a href="sign.html">Log out</a>
+                        <a href="#" class="btn-profile">Profile</a>
                     </div>   
                 </div>
 
             </div>
          
-               
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <span></span>
+                        </div>
+                        <form action="main.html" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="number" name="age" placeholder="Age" required>
+                            <textarea name="bio" placeholder="Bio" required></textarea>
+                            <input type="text" name="interests" placeholder="Interests" required>
+                            <select name="gender" required>
+                                <option value="" disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="text" name="location" placeholder="Location" required>
+                            <input type="submit" value="Create Profile">
+                        </form>
+                    </div>
+                </div>
+            </div>
     
         </div>
 

@@ -25,6 +25,99 @@ body {
     min-height: 100vh; /* Ensures the content covers the full height */
 
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    
+    margin: 5% auto;
+    padding: 20px; 
+    width: 80%;
+    max-width: 500px;    
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Profile form styles */
+.profile-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="number"],
+.profile-container textarea,
+.profile-container select {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-container textarea {
+    height: 60px;
+    resize: none;
+}
+
+.profile-container input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.profile-container input[type="submit"]:hover {
+    background-color: #218838;
+}
 .content {
     position: relative;
   }
@@ -109,7 +202,7 @@ body {
 
     display: flex;
     gap: 0.5vw; /* Adds space between the buttons */
-    margin-right:31vw; /*Pushes the buttons to the right */
+    margin-right:25vw; /*Pushes the buttons to the right */
     margin-left: auto;
 }
 

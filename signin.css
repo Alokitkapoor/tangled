@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding : 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'jost' , sans-serif;
+    background: linear-gradient(to right, #161A30, #31304D);
+    overflow-x: hidden;
+}
+::placeholder{
+    color: #F0ECE5;
+    opacity: 0.7;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+
+.main{
+    
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    background: #5f82c4;
+    background-color:#747578;
+    border-radius: 10px;
+    box-shadow: 5px 25px 50px black;
+    margin-left: 60px;
+     
+    
+    
+
+}
+
+.First{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: 100px;
+    margin-left: 50px;
+
+}
+
+.Dandi{
+    width: 8px;
+    height: 600px;
+    background-color:  #7a7a78;
+    border-radius: 4px;
+    margin-left: 100px;
+    margin-right:0px
+}
+
+.Content h1{
+    font-size: 150px;
+    font-family:monospace ;
+    color: #cacac8;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-left: 0px;
+
+
+    
+}
+.Content h2{
+    font-size: 70px;
+    font-family: monospace ;
+    color: #B6BBC4;
+    margin-top: 5px;
+    margin-left :80px;
+
+}
+
+#chk{
+    display: none;
+    
+}
+
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+label{
+    color: black;
+    font-size: 3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    
+}
+input{
+    width: 60%;
+    height: 40px;
+    background: #161A30;
+    justify-content: center;
+    display: flex;
+    color: #F0ECE5;
+    margin: 20px auto;
+    padding: 10px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 40%;
+    height: 60%;
+    padding:2px;
+    margin: 10px auto;
+    margin: black;
+    justify-content: center;
+    display: block;
+    color:#F0ECE5; 
+    background-color: #31304D;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 40px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+
+}
+ button:hover{
+    background: #161A30;
+}
+.login{
+    height: 520px;
+    background: #B6BBC4;
+    border-radius: 70% / 10%;
+    border-top: 10px;
+    border-color: black;
+    transform: translateY(-200px);
+    transition: 1s ease-in-out;
+}
+.login label{
+    color: rgba(0,0,0,0.7);
+    transform: scale(.6);
+    font-size: 50px;
+    
+
+}
+#chk:checked ~ .login{
+    transform: translateY(-600px);
+}
+
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
+
+
+
+
+
+
+.squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 8s linear infinite;
+    bottom: -150px;
+}
+
+.squares li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+}
+
+.squares li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(8) {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 30s;
+}
+
+.squares li:nth-child(9) {
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 25s;
+}
+
+.squares li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.squares li:nth-child(11) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(12) {
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.squares li:nth-child(13) {
+    left: 20%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.squares li:nth-child(14) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.mommy{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    margin-left: 42px;
+    margin-right: 43px;
+
+
+}
+
+
+        /* Add your custom CSS styles here */
+.auth-btn {  
+            
+            width: 270px;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            text-align: center;
+            border: 2px solid rgb(14, 14, 14); /* Border color */
+            padding: 10px; /* Adjust padding as needed */
+            border-radius: 8px; /* Optional: Adds rounded corners */
+        }
+
+.auth-btn img {
+            max-width: 20px; /* Limit the maximum width of the logo */
+            height: 20px; /* Maintain the aspect ratio */
+             /* Spacing between logo and text */
+            border-radius: 6px; 
+            margin-bottom: 3px;
+        }
+
+.contex{
+  color: rgb(14, 14, 14);
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+}        
+
+.btns{
+    background-color:rgba(255, 255, 255, 0.341);
+    border-radius: 20px;
+    display:inline-block;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 180px;
+    padding-top: 15px;
+    padding-left:10px;
+    padding-right:10px;
+}

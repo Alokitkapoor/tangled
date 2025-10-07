@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+
+/* Profile form styles */
+
+
+
+
+.p1header{
+
+
+display: flex;
+flex-direction: row;
+}
+
+
+.logo{
+
+background-image: url('images/pngegg.png');
+height: 3vw;
+width: 3vw;
+background-size: cover;
+margin-top: 0.5vw;
+margin-left: 10px;
+
+}
+
+.title{
+
+color: rgb(21, 63, 136);
+margin-left: 10px;
+margin-top: .6vw;
+font-size: 2vw;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btnss{
+
+display: flex;
+gap: 0.5vw; /* Adds space between the buttons */
+/* margin-right:25vw; Pushes the buttons to the right */
+/* margin-left: auto; */
+margin-left: 300px;
+margin-right: 100px;
+}
+
+.btn{
+
+margin-top: 1.2vw;
+height: 1vw;
+margin-left:1vw;
+
+/* background-color:rgb(196, 163, 126);  */
+border-width:0.15vw ; /* Remove borders */
+border-style: solid;
+border-color: transparent;
+
+color: rgb(0, 0, 0); /* White text */
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 2px; /* Some padding */
+text-align: center; /* Center the text */
+text-decoration: none; /* Remove underline */
+font-size: 1vw; /* Increase font size */
+cursor: pointer; /* Add a pointer on hover */
+border-radius: 9px; /* Rounded corners */
+padding-bottom: 0.3vw;
+padding-left: 0.3vw;
+padding-right: 0.3vw;
+
+}
+
+.btn:hover {
+
+background-color: rgba(75, 148, 164, 0.8); /* Darker green on hover */
+
+transition: 0.5s;
+transform: scale(1.1);
+}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #bab2b2;;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: white;
+    }
+    .navbar input[type="text"], .navbar select {
+      padding: 5px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .navbar button {
+      padding: 5px 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navbar button:hover {
+      background-color: #218838;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .container {
+      max-width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .profile {
+      flex: 1 1 35%;
+      margin: 10px;
+    }
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 50%;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .profile .info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .profile .info h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .profile .info p {
+      margin: 5px 0;
+    }
+    .profile .info .actions {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .profile .info .actions button {
+      background-color: #f05050;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .profile .info .actions i {
+      margin-right: 5px;
+    }
+    .profile .info .status {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .profile .info .status .status-icon {
+      margin-right: 5px;
+    }
+    .profile .info .status .status-text {
+      margin: 0;
+    }
+    .profile .info .location {
+      margin-top: 10px;
+    }
+    .profile .info .location i {
+      margin-right: 5px;
+    }
+    .profile .info .location span {
+      margin: 0;
+    }
+    .profile .info .details {
+      margin-top: 10px;
+    }
+    .profile .info .details .detail {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .profile .info .details .detail i {
+      margin-right: 5px;
+    }
+    .profile .info .details .detail span {
+      margin: 0;
+    }
+    .profile .info .preferences {
+      margin-top: 20px;
+    }
+    .profile .info .preferences .preference {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .profile .info .preferences .preference i {
+      margin-right: 5px;
+    }
+    .profile .info .preferences .preference span {
+      margin: 0;
+    }
+    .marginn {
+      margin-top: 10px;
+    }
+    .profile {
+      width: 50%;
+    }
+    .description {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+      margin: 5% auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    .profile-container {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 50%;
+      text-align: center;
+    }
+    .profile-container input[type="text"],
+    .profile-container input[type="number"],
+    .profile-container textarea,
+    .profile-container select {
+      width: 90%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .profile-container textarea {
+      height: 60px;
+      resize: none;
+    }
+    .profile-container input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .profile-container input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    /* From Uiverse.io by Pradeepsaranbishnoi */ 
+:focus {
+  outline: 0;
+  border-color: #2260ff;
+  box-shadow: 0 0 0 4px #b5c9fc;
+}
+
+.mydict div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em #0043ed;
+  background-color: #dee7ff;
+  z-index: 1;
+  color: #0043ed;
+}
+
+label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em .75em;
+  position: relative;
+  margin-left: .0625em;
+  box-shadow: 0 0 0 0.0625em #b5bfd9;
+  letter-spacing: .05em;
+  color: #3e4963;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+label:first-child span {
+  border-radius: .375em 0 0 .375em;
+}
+
+label:last-child span {
+  border-radius: 0 .375em .375em 0;
+}
+/* navbar code */
+
+
+
+
+
+.mpg{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 100vh; /* Ensures the content covers the full height */
+
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+
+margin: 5% auto;
+padding: 20px; 
+width: 80%;
+max-width: 500px;    
+border-radius: 10px;
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Profile form styles */
+.profile-container {
+background-color: #fff;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+width: 100%;
+height: 50%;
+text-align: center;
+}
+
+.profile-image {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin: 0 auto 20px;
+background-color: #ddd;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+color: #666;
+text-transform: uppercase;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="number"],
+.profile-container textarea,
+.profile-container select {
+width: 90%;
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.profile-container textarea {
+height: 60px;
+resize: none;
+}
+
+.profile-container input[type="submit"] {
+background-color: #28a745;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+margin-top: 10px;
+}
+
+.profile-container input[type="submit"]:hover {
+background-color: #218838;
+}
+.content {
+position: relative;
+}
+
+.content::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('images/roro.jpg');
+background-size: cover;
+background-position: center;
+transform: translateX(var(--bg-translate-x, 0px)); /* Only use the X translation */
+z-index: -1; /* Keep it behind other content */
+}
+
+
+.content{
+
+margin-top:4vw !important;
+background-color: rgba(251, 251, 240 , 0.1);
+background-blend-mode: overlay; /* Blends the color over the image */
+background-size: cover; /* Ensures the image covers the entire section */
+background-repeat: no-repeat; /* Prevents the image from repeating */
+background-attachment: fixed; /* Fixes the background image during scroll */
+height: 95vh; /* Full height to create a prominent effect */
+
+
+}
+
+.header2 {
+
+/* border-radius: 5px; */
+position: fixed; /* Fixed position to stick to the top */
+margin-top: 50px; /* Sticks to the top */
+height: 4vw;
+background:rgb(255, 255, 255);
+width: 100%; /* Ensures the header spans the full width of the viewport */
+
+
+display: flex;
+flex-direction: column;
+/* Ensure the shadow doesn't affect other elements */
+
+/* Add shadow at the bottom edge */
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+
+}
+.header {
+
+/* border-radius: 5px; */
+position: fixed; /* Fixed position to stick to the top */
+top: 0; /* Sticks to the top */
+height: 4vw;
+background:rgb(255, 255, 255);
+width: 100%; /* Ensures the header spans the full width of the viewport */
+
+
+display: flex;
+flex-direction: column;
+/* Ensure the shadow doesn't affect other elements */
+
+/* Add shadow at the bottom edge */
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+
+}
+
+.p1header{
+
+
+display: flex;
+flex-direction: row;
+}
+
+
+.logo{
+
+background-image: url('images/pngegg.png');
+height: 3vw;
+width: 3vw;
+background-size: cover;
+margin-top: 0.5vw;
+margin-left: 10px;
+
+}
+
+.title{
+
+color: rgb(21, 63, 136);
+margin-left: 10px;
+margin-top: .6vw;
+font-size: 2vw;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btnss{
+
+display: flex;
+gap: 0.5vw; /* Adds space between the buttons */
+margin-right:25vw; /*Pushes the buttons to the right */
+margin-left: auto;
+}
+
+.btn{
+
+margin-top: 1.2vw;
+height: 1vw;
+margin-left:1vw;
+
+/* background-color:rgb(196, 163, 126);  */
+border-width:0.15vw ; /* Remove borders */
+border-style: solid;
+border-color: transparent;
+
+color: rgb(0, 0, 0); /* White text */
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 2px; /* Some padding */
+text-align: center; /* Center the text */
+text-decoration: none; /* Remove underline */
+font-size: 1vw; /* Increase font size */
+cursor: pointer; /* Add a pointer on hover */
+border-radius: 9px; /* Rounded corners */
+padding-bottom: 0.3vw;
+padding-left: 0.3vw;
+padding-right: 0.3vw;
+
+}
+
+.btn:hover {
+
+background-color: rgba(75, 148, 164, 0.8); /* Darker green on hover */
+
+transition: 0.5s;
+transform: scale(1.1);
+}
+
+
+/* Three-bar menu */
+.threebars {
+/* position: relative; ---> find what it does */ 
+margin-left: 1vw;
+margin-top: 1.5vw;
+margin-right: 1vw;
+}
+
+
+.menu-icon {
+
+cursor: pointer;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 3vw; /* Adjust width */
+height: 1.3vw; /* Adjust height */
+
+}
+
+.bar {
+
+background-color: #333; /* Bar color */
+height: 0.2vw; /* Bar thickness */
+width: 2vw; /* Full width */
+border-radius: 4px; /* Rounded edges */
+}
+
+.dropdown-content {
+
+display: none;
+position: absolute;
+right: 2vw;
+top: 3vw;
+background-color:rgb(255, 255, 255);
+min-width: 9vw;
+border-radius: 5px;
+z-index: 1002;
+}
+
+.dropdown-content a {
+z-index: 1002;
+
+
+
+color: black;
+padding: 1vw 1.5vw;
+text-decoration: none;
+font-size: 1.3vw;
+display: block;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.dropdown-content a:hover {
+
+color: rgb(90, 90, 90);
+transition: 0.3s;
+transform: scale(1.1);
+
+}
+
+/* Show the dropdown menu on hover */
+.threebars:hover .dropdown-content {
+
+display: block;
+z-index: 2000;
+}
+/* From Uiverse.io by Yaya12085 */ 
+
+
+
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input {
+  --container_width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #000000;
+  width: var(--container_width);
+  overflow: hidden;
+  border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.radio-input label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+.selection {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: calc(var(--container_width) / 4);
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: .15s ease;
+}
+
+.radio-input label:has(input:checked) {
+  color: #fff;
+}
+
+.radio-input label:has(input:checked) ~ .selection {
+  background-color: rgb(11 117 223);
+  display: inline-block;
+}
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 0/4));
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 1/4));
+}
+
+.radio-input label:nth-child(3):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 2/4));
+}
+
+.radio-input label:nth-child(4):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 3/4));
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+
+
+
+  <div class="mpg">
+    <div class="header">
+        <div class="p1header">
+            <a href="main.html"><div class="logo"></div></a>
+            <div class="title">Tangled</div>
+            <div class="btnss">
+                <a href="#testimonials" class="btn">Testimonials</a>
+                <a href="#support" class="btn">Support</a>
+                <a href="contact.html" class="btn">Contact Us</a>
+                <a href="#about" class="btn">About Us</a>
+                <a href="#" class="btn">Profiles</a>
+                <a href="chat.html" class="btn">chat</a>
+            </div>
+            <div class="threebars">
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown-content">
+                    <a href="new login.html">Sign out</a>
+                    <a href="new login.html">Log out</a>
+                    <a href="#" class="btn-profile">Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="profile-container">
+            <div class="profile-image">
+                <span></span>
+            </div>
+            <form action="main.html" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="number" name="age" placeholder="Age" required>
+                <textarea name="bio" placeholder="Bio" required></textarea>
+                <input type="text" name="interests" placeholder="Interests" required>
+                <select name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" name="location" placeholder="Location" required>
+                <input type="submit" value="Create Profile">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- navbar ends -->
+  <!--  -->
+    <div class="header2"  style="height: 60px; display: flex; justify-content: center; align-items: center;">
+        <div class="p1header" style="display: flex; align-items: center; ">
+            <h3 style="color: rgb(38, 75, 108);">Please select the Gender and Age you're searching for <i class="fa-solid fa-transgender"></i></h3>
+            <div class="navbar">
+              <!-- <button onclick="console.log(document.getElementById('filter').value)">Search</button> -->
+              <!-- /* Fro */  -->
+                <div class="mydict">
+                <div>
+                  <label>
+                    <input type="radio" name="radio" onclick="fetchData('F')">
+                    <span>Women</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" onclick="fetchData('M')" checked="">
+                    <span>Men</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="radio">
+                    <span>Divided</span>
+                  </label>
+                  
+                </div>
+                
+              </div>
+              
+            </div> 
+            <div class="radio-input">
+              <label>
+              <input value="value-1" name="value-radio" id="value-1" type="radio" onclick="fetchData(20)">
+              <span><20</span>
+              </label>
+              <label>
+                <input value="value-2" name="value-radio" id="value-2" type="radio" onclick="fetchData(25)">
+              <span><25</span>
+              </label>
+              <label>
+                <input value="value-3" name="value-radio" id="value-3" type="radio"onclick="fetchData(30)">
+              <span><30</span>
+              </label>
+              <label>
+                <input value="value-3" name="value-radio" id="value-3" type="radio"onclick="fetchData(31)">
+              <span>>30</span>
+              </label>
+              <span class="selection"></span>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+  <div id="main-content" style="margin-top: 120px;"> </div>
+
+  <template id="template-box2">
+    <div class="container">
+      <div class="profile">
+        <h2 id="imageofpersonnnn">Akarshita Sharma</h2> 
+        <div class="info">
+          <h2 id="mainname"></h2>
+          <p>Online 2d ago</p>
+          <div class="actions">
+            <button><i class="fas fa-heart"></i>Like</button>
+            <button><i class="fas fa-comment"></i>Connect</button>
+          </div>
+          <p style="display: none;">Email: <span id="email"></span></p>
+          <p style="display: none;">Category: <span id="category"></span></p>
+        </div>
+        <div id="userinfo" style="width: 50%;"></div>
+      </div>
+      <div class="details" style="width: 20%;">
+        <h3>Description</h3>
+        <div class="description">
+          <p>Namaste! Simply and briefly, allow me to introduce myself...</p>
+        </div>
+        <h3>Partner Preferences</h3>
+        <p id="partnerpref">Open to all religions and caste...</p>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    async function searchdata(query,results) {
+      
+      const Cardcontainer = document.getElementById("main-content");
+      const template = document.getElementById("template-box2");
+      Cardcontainer.innerHTML = '';
+      if(typeof(query) !== "string"){
+        results.forEach(result => {
+          if(query==31){
+            if (!result.name ||result.age < query) return;
+            else{
+              const CardClone = template.content.cloneNode(true);
+              fillData(CardClone, result);
+              Cardcontainer.appendChild(CardClone);
+            }
+          }
+          if (!result.name ||result.age > query) return;
+
+        const CardClone = template.content.cloneNode(true);
+        fillData(CardClone, result);
+        Cardcontainer.appendChild(CardClone);
+      });
+      }
+      results.forEach(result => {
+        if (!result.name ||result.gender !== query) return;
+
+        const CardClone = template.content.cloneNode(true);
+        fillData(CardClone, result);
+        Cardcontainer.appendChild(CardClone);
+      });
+    }
+
+    const fetchData = async (query) => {
+      try {
+        const response = await fetch("https://aviralkaushik412.glitch.me/data.json");
+        if (!response.ok) {
+          throw new Error("Failed to locate resources.");
+        }
+        const data = await response.json();
+        console.log(data[0].url);
+        BindData(data);
+        if(query) {
+          searchdata(query,data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData('M');
+
+    async function fillData(cardClone, result) {
+      const imageofperson = cardClone.querySelector("#imageofpersonnnn");
+      const username = cardClone.querySelector("#mainname");
+      const email = cardClone.querySelector("#email");
+      const category = cardClone.querySelector("#category");
+      const profile2 = cardClone.querySelector("#username2");
+      const otherinfo = cardClone.querySelector("#userinfo");
+      const partnerpref = cardClone.querySelector("#partnerpref");
+      const description = cardClone.querySelector(".description");
+
+      username.innerHTML = result.name; 
+      imageofperson.innerHTML = `<img id="ppimage" alt="Profile Picture" src="${result.url}">`; // Display name in hover email
+      email.innerHTML = result.email;
+      category.innerHTML = result.category; 
+      otherinfo.innerHTML = `<div class="status">
+        <i class="fas fa-check-circle"></i>
+        <span class="status-text">Preferred</span>
+        </div>
+        <div class="location marginn">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>${result.location}</span>
+        </div>
+        <div class="detail marginn">
+        <div class="detail">
+          <i class="fas fa-user"></i>
+          <span>${result.age} yrs, ${result.height}</span>
+        </div>
+        <div class="detail marginn">
+          <i class="fas fa-language"></i>
+          <span>${result.language.join(', ')}</span>
+        </div>
+        <div class="detail marginn">
+          <i class="fa-solid fa-mars-and-venus"></i>
+          <span>${result.gender}</span>
+        </div>
+        <div class="detail marginn">
+          <i class="fas fa-graduation-cap"></i>
+          <span>${result.education}</span>
+        </div>
+        </div>`;
+
+      partnerpref.innerHTML = result.partner_references;
+      description.innerHTML = result.profile_description;
+    }
+
+    function BindData(results) {
+      const Cardcontainer = document.getElementById("main-content");
+      const template = document.getElementById("template-box2");
+      Cardcontainer.innerHTML = '';
+      shuffleArray(results);
+      results.forEach(result => {
+        if (!result.name || !result.name) return;
+
+        const CardClone = template.content.cloneNode(true);
+        fillData(CardClone, result);
+        Cardcontainer.appendChild(CardClone);
+      });
+    }
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+  </script>
+</body>
+</html>
